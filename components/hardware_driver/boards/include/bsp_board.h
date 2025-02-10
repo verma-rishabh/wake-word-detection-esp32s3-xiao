@@ -1,19 +1,3 @@
-/**
- * 
- * @copyright Copyright 2021 Espressif Systems (Shanghai) Co. Ltd.
- *
- *      Licensed under the Apache License, Version 2.0 (the "License");
- *      you may not use this file except in compliance with the License.
- *      You may obtain a copy of the License at
- *
- *               http://www.apache.org/licenses/LICENSE-2.0
- *
- *      Unless required by applicable law or agreed to in writing, software
- *      distributed under the License is distributed on an "AS IS" BASIS,
- *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *      See the License for the specific language governing permissions and
- *      limitations under the License.
- */
 
 #pragma once
 
@@ -27,26 +11,8 @@
  * 
  */
 
-#if CONFIG_ESP32_S3_BOX_BOARD
-    #include "esp32_s3_box_board.h"
-#elif CONFIG_ESP32_S3_KORVO_1_V4_0_BOARD
-    #include "esp32_s3_korvo_1_v4_board.h"
-#elif CONFIG_ESP32_KORVO_V1_1_BOARD
-    #include "esp32_korvo_v1_1_board.h"
-#elif CONFIG_ESP32_S3_KORVO_2_V3_0_BOARD
-    #include "esp32_s3_korvo_2_v3_board.h"
-#elif CONFIG_ESP32_S3_EYE_BOARD
-    #include "esp32_s3_eye_board.h"
-#elif CONFIG_ESP_CUSTOM_BOARD
-    #include "esp_custom_board.h"
-#elif CONFIG_ESP32_S3_BOX_LITE_BOARD
-    #include "esp32_s3_box_lite_board.h"
-#elif CONFIG_ESP32_S3_AFE_RASPBERRY_BOARD
-    #include "esp32_s3_afe_raspberry_board.h"
-#elif CONFIG_ESP32_S3_BOX_3_BOARD
-    #include "esp32_s3_box_3_board.h"
-#elif CONFIG_ESP32_P4_FUNCTION_EV_BOARD
-    #include "esp32_p4_function_ev_board.h"
+#if CONFIG_ESP32_S3_XIAO_BOARD
+    #include "esp32_s3_xiao_board.h"
 #else 
     #error "Please select type of dev board"
 #endif
